@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+
+  :host {
+    width: 100%;
+  }
+
+  .tree-view {
+    margin: 0;
+    padding-left: 8px;
+    list-style-type: none;
+    transition: all .3s ease-in-out;
+    &__main {
+      &__apps {
+        background: #0981b1;
+        color: #fff;
+        padding: 8px;
+        font-size: 16px;
+        margin: 0 0 10px;
+        border-radius: 3px;
+        transition: all .3s ease;
+        backface-visibility: hidden;
+      }
+      &__apps:hover {
+          background: #5f1aff;
+          cursor: pointer;
+      }
+      &__empty {
+        background: #d7d6d8;
+        opacity: 0.5;
+        color: black;
+        padding: 14px;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 3px;
+        transition: all .3s ease;
+        backface-visibility: hidden;
+      }
+      &__empty:hover {
+          background: gray;
+          cursor: pointer;
+      }
+    }
+  }

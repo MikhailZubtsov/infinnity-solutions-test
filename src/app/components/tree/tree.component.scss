@@ -1,0 +1,10 @@
+:host {
+    width: 100%;
+}
+
+.tree {
+    &__search-input{
+        margin-bottom: 20px;
+        height: 20px;
+    }
+}

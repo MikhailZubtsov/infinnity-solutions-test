@@ -1,0 +1,10 @@
+<ul class="tree-view">
+    <li class="tree-view__main" *ngFor="let node of nodes">
+        <div (click)="onNodeSelect(node)" [emptyNode]="!node.nodes || !node.nodes.length">
+            <span class="tree-view__main__name" > {{ node.name }} </span>
+        </div>
+        <ul *ngIf="node.nodes && node.expanded">
+            <tree-node [nodes]="node.nodes" (nodeSelect)="onChildNodeSelect($event)"></tree-node>
+        </ul>
+    </li>
+</ul>

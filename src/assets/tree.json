@@ -1,0 +1,31 @@
+[{
+    "name": "folder1",
+    "nodes": [
+        {
+            "name": "folder1_1",
+            "nodes": [
+                {
+                    "name": "file1"
+                },
+                {
+                    "name": "file2"
+                }
+            ]
+        }
+    ]
+},{
+    "name": "documents",
+    "nodes": [
+        {
+            "name": "folder2_1",
+            "nodes": [
+                {
+                    "name": "file11"
+                },
+                {
+                    "name": "file12"
+                }
+            ]
+        }
+    ]
+}]

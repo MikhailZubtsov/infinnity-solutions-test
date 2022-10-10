@@ -1,0 +1,10 @@
+.file-tree {
+    display: flex;
+    flex-direction: row;
+
+    &__node-info {
+        margin-left: 50px;
+        width: 500px;
+        color: black;
+    }
+}

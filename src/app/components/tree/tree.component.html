@@ -1,0 +1,4 @@
+<ng-container *ngIf="canShow">
+    <input *ngIf="searchable" class="tree__search-input" type="text" (ngModelChange)="search($event)" [(ngModel)]="searchValue" />
+    <tree-node [nodes]="filtredNodes" (nodeSelect)="onSelectNode($event)"></tree-node>
+</ng-container>

@@ -1,0 +1,11 @@
+<div class="file-tree">
+    <tree
+        [nodes]="nodes$ | async"
+        [baseUrl]="''"
+        [supportsRoute]="true"
+        (selectNode)="onSelectNode($event)">
+    </tree>
+    <div class="file-tree__node-info">
+        <p>{{ selectedNode?.name || '' }}</p>
+    </div>
+</div>
